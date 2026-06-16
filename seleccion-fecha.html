@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Fecha - MinsaCita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-fecha">
+    <div class="contenedor">
+        <a href="#contenido-fecha" class="skip-link">Saltar al contenido principal</a>
+
+        <header class="header-roles" style="border-bottom: 2px solid #00A3E0; padding: 16px 20px; background: white;">
+            <div class="logo-minsa-simple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#004481" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Minsacita">
+                    <rect width="24" height="24" fill="#004481"/>
+                    <path d="M12 3L4 7v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-4zm-1 11H9v-2h2V9h2v4h2v2h-2v2h-2v-2z" fill="white"/>
+                </svg>
+                <span class="logo-text">MINSACITA</span>
+            </div>
+        </header>
+
+        <main id="contenido-fecha" class="main-fecha p-20" style="background: #F7FAFC; min-height: 100vh;">
+            <div class="steps-container-simple" aria-label="Progreso: Paso 4 de 5">
+                <div class="step-box completed">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="step-line-s completed"></div>
+                <div class="step-box completed">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="step-line-s completed"></div>
+                <div class="step-box completed">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="step-line-s completed"></div>
+                <div class="step-box active" aria-current="step">4</div>
+                <div class="step-line-s"></div>
+                <div class="step-box">5</div>
+            </div>
+
+            <h1 class="fecha-title">Seleccione Fecha y Hora</h1>
+            <p class="fecha-subtitle">Elija el día y el horario disponible para su cita médica.</p>
+
+            <div class="calendar-card">
+                <div class="calendar-header">
+                    <button class="btn-cal-nav" aria-label="Mes anterior"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <span class="calendar-month">Octubre 2024</span>
+                    <button class="btn-cal-nav" aria-label="Mes siguiente"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="cal-day-name">L</div><div class="cal-day-name">M</div><div class="cal-day-name">M</div><div class="cal-day-name">J</div><div class="cal-day-name">V</div><div class="cal-day-name">S</div><div class="cal-day-name">D</div>
+                    <div></div><div></div><div class="cal-day">1</div><div class="cal-day">2</div><div class="cal-day">3</div><div class="cal-day">4</div><div class="cal-day">5</div>
+                    <div class="cal-day">6</div><div class="cal-day">7</div><div class="cal-day">8</div><div class="cal-day">9</div><div class="cal-day">10</div><div class="cal-day">11</div><div class="cal-day">12</div>
+                    <div class="cal-day">13</div><div class="cal-day available">14</div><div class="cal-day selected" aria-current="date">15</div><div class="cal-day available">16</div><div class="cal-day available">17</div><div class="cal-day available">18</div><div class="cal-day">19</div>
+                    <div class="cal-day">20</div><div class="cal-day available">21</div><div class="cal-day available">22</div><div class="cal-day available">23</div><div class="cal-day available">24</div><div class="cal-day available">25</div><div class="cal-day">26</div>
+                    <div class="cal-day">27</div><div class="cal-day available">28</div><div class="cal-day available">29</div><div class="cal-day available">30</div><div class="cal-day available">31</div><div></div><div></div>
+                </div>
+                <div class="calendar-legend">
+                    <span class="legend-item"><span class="legend-color available"></span> Disponible</span>
+                    <span class="legend-item"><span class="legend-color selected"></span> Seleccionado</span>
+                </div>
+            </div>
+
+            <div class="time-section">
+                <h2 class="time-title">Horarios Disponibles</h2>
+                <p class="time-subtitle">Día seleccionado: <strong style="color:#0B2B46;">Miércoles 15 de Octubre, 2024</strong></p>
+
+                <div class="time-grid">
+                    <button class="time-btn">08:00</button>
+                    <button class="time-btn">08:30</button>
+                    <button class="time-btn selected">
+                        09:00
+                        <svg class="check-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </button>
+                    <button class="time-btn disabled" disabled aria-disabled="true">09:30</button>
+                    <button class="time-btn">10:00</button>
+                    <button class="time-btn">10:30</button>
+                    <button class="time-btn">11:00</button>
+                    <button class="time-btn">11:30</button>
+                    <button class="time-btn disabled" disabled aria-disabled="true">14:00</button>
+                    <button class="time-btn disabled" disabled aria-disabled="true">14:30</button>
+                    <button class="time-btn">15:00</button>
+                    <button class="time-btn">15:30</button>
+                </div>
+            </div>
+
+            <div class="botones-medico-bottom" style="background:transparent; border-top:none; padding:0; margin-top:24px;">
+                <a href="seleccion-medico.html" class="btn-outline-back">Atras</a>
+                <a href="confirmacion.html" class="btn-primario text-center" style="flex:1; text-decoration:none;">
+                    Siguiente
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true" style="margin-left: 6px;">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.time-btn:not(.disabled)').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                // Quitar seleccionado a todos
+                document.querySelectorAll('.time-btn.selected').forEach(function(b) {
+                    b.classList.remove('selected');
+                    const icon = b.querySelector('.check-icon');
+                    if (icon) icon.remove();
+                });
+
+                // Seleccionar actual
+                this.classList.add('selected');
+                this.insertAdjacentHTML('beforeend', '<svg class="check-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+            });
+        });
+    </script>
+</body>
+</html>

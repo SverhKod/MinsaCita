@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Bloqueada - MinsaCita</title>
+    <!-- Criterio 11: Tipografía universal -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor contenedor-bloqueado">
+        <!-- CRITERIO 9: Skip link -->
+        <a href="#contenido-bloqueado" class="skip-link">Saltar al contenido principal</a>
+
+        <main id="contenido-bloqueado" class="main-bloqueado p-20 text-center">
+            
+            <div class="bloqueado-icon-container">
+                <!-- CRITERIO 5: Ícono oculto para screen readers, el h1 tiene el contexto real -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#C53030" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#C53030" stroke-width="2" fill="none"></path>
+                </svg>
+            </div>
+
+            <h1 class="bloqueado-title">Acceso Temporalmente Bloqueado por Seguridad</h1>
+            
+            <p class="bloqueado-text">
+                Se han detectado 3 intentos fallidos de inicio de sesión. Por su seguridad, su cuenta ha sido congelada temporalmente.
+            </p>
+
+            <div class="timer-box" aria-live="polite">
+                <p class="timer-label">TIEMPO RESTANTE</p>
+                <!-- Uso semántico para indicar cambio de estado de tiempo -->
+                <p class="timer-value">14 : 59</p>
+            </div>
+
+            <!-- CRITERIO 3 y 6: Botón navegable y con área táctil > 44px -->
+            <!-- CRITERIO 2: Contraste cumple con texto blanco en fondo #004481 -->
+            <a href="#" class="btn-primario btn-recuperar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icon-btn">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Recuperar Contraseña por Correo o SMS
+            </a>
+
+            <!-- Botón deshabilitado nativo con aria-disabled -->
+            <button class="btn-secundario btn-volver" disabled aria-disabled="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icon-btn">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                Volver a intentar
+            </button>
+
+        </main>
+    </div>
+</body>
+</html>

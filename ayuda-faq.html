@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda y FAQ - MinsaCita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-fecha" style="background:#F7FAFC;">
+    <div class="contenedor" style="background:white; min-height:100vh;">
+        <a href="#contenido-ayuda" class="skip-link">Saltar al contenido principal</a>
+
+        <header class="header-roles" style="border-bottom: 1px solid #E2E8F0; padding: 16px 20px; display:flex; align-items:center; justify-content:space-between;">
+            <div class="logo-minsa-simple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#004481" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Minsacita">
+                    <rect width="24" height="24" fill="#004481"/>
+                    <path d="M12 3L4 7v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-4zm-1 11H9v-2h2V9h2v4h2v2h-2v2h-2v-2z" fill="white"/>
+                </svg>
+                <span class="logo-text">MINSACITA</span>
+            </div>
+            <a href="index.html" aria-label="Volver atrás" style="color:#004481; text-decoration:none;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </a>
+        </header>
+
+        <main id="contenido-ayuda" class="p-20">
+            <h1 style="font-size:24px; color:#0B2B46; margin:0 0 16px 0; line-height:1.2;">Ayuda y Preguntas Frecuentes</h1>
+            <p style="font-size:14px; color:#4A5568; margin:0 0 24px 0; line-height:1.5;">Encuentre respuestas rápidas sobre el uso del aplicativo MinsaCita, gestione sus atenciones y conozca los canales de soporte del Ministerio de Salud.</p>
+
+            <div class="search-box" style="position:relative; margin-bottom:24px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" style="position:absolute; left:12px; top:12px;" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="Busque un tema (ej. Cancelar cita)..." class="input-registro" style="padding-left:36px; padding-top:10px; padding-bottom:10px; font-size:13px;" aria-label="Buscar en ayuda">
+            </div>
+
+            <div style="background:#F7FAFC; border:1px solid #E2E8F0; padding:20px; margin-bottom:32px;">
+                <div style="width:40px; height:40px; background:#004481; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <h2 style="font-size:16px; color:#0B2B46; margin:0 0 8px 0;">Soporte Técnico MINSA</h2>
+                <p style="font-size:13px; color:#4A5568; margin:0 0 16px 0; line-height:1.5;">Orientación médica gratuita, soporte de salud mental e información sobre sus citas. Disponible las 24 horas del día a nivel nacional.</p>
+                <a href="tel:113" class="btn-primario btn-full" style="padding:12px; text-decoration:none; text-align:center;">Llamar al 113</a>
+            </div>
+
+            <h3 style="font-size:16px; color:#0B2B46; margin:0 0 16px 0; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">Preguntas Frecuentes</h3>
+            
+            <div style="display:flex; flex-direction:column;">
+                <button class="faq-btn" style="display:flex; justify-content:space-between; align-items:center; width:100%; background:none; border:none; border-bottom:1px solid #E2E8F0; padding:16px 0; cursor:pointer; text-align:left;">
+                    <span style="font-size:13px; font-weight:600; color:#1A202C; max-width:90%;">¿Cómo programar una nueva cita médica?</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <button class="faq-btn" style="display:flex; justify-content:space-between; align-items:center; width:100%; background:none; border:none; border-bottom:1px solid #E2E8F0; padding:16px 0; cursor:pointer; text-align:left;">
+                    <span style="font-size:13px; font-weight:600; color:#1A202C; max-width:90%;">¿Con cuánto tiempo de anticipación puedo cancelar mi cita?</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <button class="faq-btn" style="display:flex; justify-content:space-between; align-items:center; width:100%; background:none; border:none; border-bottom:1px solid #E2E8F0; padding:16px 0; cursor:pointer; text-align:left;">
+                    <span style="font-size:13px; font-weight:600; color:#1A202C; max-width:90%;">¿Qué documentos son obligatorios el día de la atención?</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <button class="faq-btn" style="display:flex; justify-content:space-between; align-items:center; width:100%; background:none; border:none; border-bottom:1px solid #E2E8F0; padding:16px 0; cursor:pointer; text-align:left;">
+                    <span style="font-size:13px; font-weight:600; color:#1A202C; max-width:90%;">Olvidé mi contraseña, ¿cómo puedo recuperarla?</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#718096" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

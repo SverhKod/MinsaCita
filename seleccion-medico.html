@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Médico - MinsaCita</title>
+    <!-- Criterio 11 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-medico">
+    <div class="contenedor contenedor-medico">
+        <!-- CRITERIO 9: Skip link -->
+        <a href="#contenido-medico" class="skip-link">Saltar al contenido principal</a>
+
+        <header class="header-roles" style="border-bottom: 1px solid #E2E8F0; padding: 16px 20px; background-color: white;">
+            <!-- CRITERIO 1: aria-label -->
+            <div class="logo-minsa-simple">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#004481" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Minsacita">
+                    <rect width="24" height="24" fill="#004481"/>
+                    <path d="M12 3L4 7v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-4zm-1 11H9v-2h2V9h2v4h2v2h-2v2h-2v-2z" fill="white"/>
+                </svg>
+                <span class="logo-text">MINSACITA</span>
+            </div>
+        </header>
+
+        <!-- CRITERIO 10: Semántica main -->
+        <main id="contenido-medico" class="main-medico">
+            <div class="medico-header p-20">
+                <h1 class="medico-title">Paso 3 de 5: Selección de Médico</h1>
+                
+                <div class="nav-breadcrumbs" aria-label="Progreso de reserva">
+                    <span class="breadcrumb-item">Especialidad</span>
+                    <span class="breadcrumb-item">Fecha</span>
+                    <span class="breadcrumb-item active" aria-current="step">Médico</span>
+                    <span class="breadcrumb-item">Confirmar</span>
+                    <span class="breadcrumb-item">Listo</span>
+                </div>
+                <div class="progress-bar-container" aria-hidden="true">
+                    <div class="progress-bar-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="medico-list p-20">
+                <!-- Médico 1 -->
+                <article class="medico-card">
+                    <!-- CRITERIO 1: Texto alternativo descriptivo de la imagen -->
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=600&auto=format&fit=crop" alt="Fotografía del Dr. Juan Pérez en su consultorio" class="medico-img">
+                    <div class="medico-info">
+                        <h2 class="medico-name">Dr. Juan Pérez</h2>
+                        <p class="medico-spec">Especialidad: Cardiología General</p>
+                        <p class="medico-office">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"></path><path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"></path></svg>
+                            Consultorio 204
+                        </p>
+                        <!-- CRITERIO 6: Área táctil y CRITERIO 3: navegable por teclado -->
+                        <button type="button" class="btn-cyan btn-full">
+                            Elegir Médico
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 6px;">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Médico 2 -->
+                <article class="medico-card">
+                    <!-- CRITERIO 1 -->
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=600&auto=format&fit=crop" alt="Fotografía de la Dra. María Gómez en uniforme médico" class="medico-img">
+                    <div class="medico-info">
+                        <h2 class="medico-name">Dra. María Gómez</h2>
+                        <p class="medico-spec">Especialidad: Cardiología Pediátrica</p>
+                        <p class="medico-office">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"></path><path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"></path></svg>
+                            Consultorio 105
+                        </p>
+                        <!-- CRITERIO 2: Botón cyan con texto blanco tiene contraste validado -->
+                        <button type="button" class="btn-cyan btn-full">
+                            Elegir Médico
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 6px;">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Médico 3 -->
+                <article class="medico-card">
+                    <!-- CRITERIO 1 y 5: Si no hay foto, el placeholder tiene aria-label descriptivo -->
+                    <div class="medico-img-placeholder" role="img" aria-label="Sin fotografía disponible para el Dr. Carlos Mendoza">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A0AEC0" stroke-width="2" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="medico-info">
+                        <h2 class="medico-name">Dr. Carlos Mendoza</h2>
+                        <p class="medico-spec">Especialidad: Cardiología Intervencionista</p>
+                        <p class="medico-office">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21v-8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"></path><path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"></path></svg>
+                            Consultorio 312
+                        </p>
+                        <button type="button" class="btn-cyan btn-full">
+                            Elegir Médico
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 6px;">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="botones-medico-bottom">
+                <a href="seleccion-sede.html" class="btn-outline-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-right: 6px;">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Volver
+                </a>
+                <!-- CRITERIO 4: Botón nativamente deshabilitado, es ignorado por el tab-index -->
+                <button type="button" id="btn-siguiente-medico" class="btn-disabled-next" disabled aria-disabled="true">
+                    Siguiente
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 6px;">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.btn-cyan').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                // Restaurar todos a su estado inicial
+                document.querySelectorAll('.medico-card').forEach(function(c) {
+                    c.style.borderColor = '#E2E8F0';
+                });
+                document.querySelectorAll('.btn-cyan').forEach(function(b) {
+                    b.style.backgroundColor = '#EBF4FF';
+                    b.style.color = '#0B2B46';
+                    b.innerHTML = 'Elegir Médico <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 6px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+                });
+
+                // Seleccionar el actual
+                this.closest('.medico-card').style.borderColor = '#004481';
+                this.style.backgroundColor = '#004481';
+                this.style.color = 'white';
+                this.innerHTML = 'Seleccionado ✓';
+
+                // Habilitar el botón Siguiente
+                var nextBtn = document.getElementById('btn-siguiente-medico');
+                nextBtn.className = 'btn-primario btn-full';
+                nextBtn.removeAttribute('disabled');
+                nextBtn.setAttribute('aria-disabled', 'false');
+                nextBtn.onclick = function() {
+                    window.location.href = 'seleccion-fecha.html';
+                };
+            });
+        });
+    </script>
+</body>
+</html>
