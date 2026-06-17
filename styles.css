@@ -413,8 +413,14 @@ nav span {
 
 .form-help {
     font-size: 11px;
-    color: #718096;
+    color: #4A5568; /* Contraste mejorado para WAVE */
     margin-top: 4px;
+}
+
+/* CRITERIO 2: Contraste para placeholders */
+::placeholder {
+    color: #4A5568;
+    opacity: 1; /* Firefox */
 }
 
 .checkbox-group {
@@ -1225,6 +1231,8 @@ select.input-registro {
 }
 
 .medico-img-placeholder {
+    color: #718096;
+    opacity: 1; /* Firefox */
     width: 100%;
     height: 200px;
     background-color: #EBF4FF;
