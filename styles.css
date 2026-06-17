@@ -977,10 +977,6 @@ nav span {
     color: white;
 }
 
-    background-color: #F7FAFC;
-    outline: none;
-}
-
 /* ================= SELECCIÓN DE SEDE (MODAL) ================= */
 .body-sede {
     background-color: rgba(0,0,0,0.5); /* Simular fondo oscuro detrás del modal */
@@ -1331,7 +1327,7 @@ select.input-registro {
     width: 24px;
     height: 24px;
     border: 1px solid #CBD5E0;
-    color: #A0AEC0;
+    color: #4A5568; /* Contraste accesible */
     background-color: white;
     display: flex;
     align-items: center;
