@@ -34,7 +34,7 @@
             </div>
 
             <!-- CRITERIO 8: Formularios con labels visibles y autocomplete -->
-            <form id="formulario" action="dashboard.html" class="login-form">
+            <form id="formulario" onsubmit="return validarLoginTecnico(event)" class="login-form">
                 
                 <div class="grupo-form">
                     <label for="documento">Número de Documento (DNI/CE)</label>
@@ -109,6 +109,18 @@
                 </div>
             </form>
         </main>
+
+        <script>
+            function validarLoginTecnico(e) {
+                e.preventDefault();
+                var dni = document.getElementById('documento').value;
+                if(dni === '12300123') {
+                    window.location.href = 'dashboard-tecnico.html';
+                } else {
+                    alert('Acceso denegado. Para Técnico, por favor ingrese el DNI: 12300123');
+                }
+            }
+        </script>
 
         <footer class="footer-login">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="2" aria-hidden="true">
